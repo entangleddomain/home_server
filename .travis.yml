@@ -1,4 +1,8 @@
+os: linux
+dist: xenial
+language: c
+
 before_install:
-  - sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
-  - sudo apt-get install mosquitto mosquitto-clients
+  - sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa -y
+  - sudo apt-get install mosquitto mosquitto-clients -y
   - sudo /etc/init.d/mosquitto start
