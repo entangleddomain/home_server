@@ -1,3 +1,4 @@
 before_install:
   - sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
   - sudo apt-get install mosquitto mosquitto-clients
+  - sudo /etc/init.d/mosquitto start
